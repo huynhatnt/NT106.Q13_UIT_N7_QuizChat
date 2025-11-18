@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\roommanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\roommanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\quizmanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\quizmanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\questioneditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,12 +19,16 @@
       "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\quizeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\quizmanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\quizmanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\monitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\roommanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\roommanagerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MonitorForm.cs",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\MonitorForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\MonitorForm.cs",
@@ -79,19 +79,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "RoomManagerForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\RoomManagerForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\RoomManagerForm.cs",
-              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\RoomManagerForm.cs [Design]*",
-              "RelativeToolTip": "ServerForm\\RoomManagerForm.cs [Design]*",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\RoomManagerForm.cs [Design]",
+              "RelativeToolTip": "ServerForm\\RoomManagerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T05:01:46.041Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "QuizManagerForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\QuizManagerForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\QuizManagerForm.cs",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "QuizEditorForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\QuizEditorForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\QuizEditorForm.cs",
@@ -115,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "QuestionEditorForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\QuestionEditorForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\QuestionEditorForm.cs",
@@ -127,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MonitorForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\MonitorForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\MonitorForm.cs",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\MainForm.cs",
               "RelativeDocumentMoniker": "ServerForm\\MainForm.cs",
