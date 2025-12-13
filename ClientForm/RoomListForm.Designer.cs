@@ -25,9 +25,9 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(20, 15);
+            this.lblTitle.Location = new System.Drawing.Point(17, 13);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(136, 20);
+            this.lblTitle.Size = new System.Drawing.Size(130, 20);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Danh sách phòng";
             // 
@@ -36,17 +36,17 @@
             this.lstRooms.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstRooms.FormattingEnabled = true;
             this.lstRooms.ItemHeight = 17;
-            this.lstRooms.Location = new System.Drawing.Point(20, 50);
+            this.lstRooms.Location = new System.Drawing.Point(17, 43);
             this.lstRooms.Name = "lstRooms";
-            this.lstRooms.Size = new System.Drawing.Size(340, 208);
+            this.lstRooms.Size = new System.Drawing.Size(292, 174);
             this.lstRooms.TabIndex = 1;
             // 
             // btnJoin
             // 
             this.btnJoin.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnJoin.Location = new System.Drawing.Point(125, 275);
+            this.btnJoin.Location = new System.Drawing.Point(92, 235);
             this.btnJoin.Name = "btnJoin";
-            this.btnJoin.Size = new System.Drawing.Size(120, 38);
+            this.btnJoin.Size = new System.Drawing.Size(129, 33);
             this.btnJoin.TabIndex = 2;
             this.btnJoin.Text = "Tham gia phòng";
             this.btnJoin.UseVisualStyleBackColor = true;
@@ -55,9 +55,9 @@
             // RoomListForm
             // 
             this.AcceptButton = this.btnJoin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 335);
+            this.ClientSize = new System.Drawing.Size(330, 290);
             this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.lstRooms);
             this.Controls.Add(this.lblTitle);
@@ -68,6 +68,7 @@
             this.Text = "Room List";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

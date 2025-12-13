@@ -11,7 +11,9 @@ namespace ClientForm.Services
     {
         private readonly FirestoreDb _db = FirebaseService.Db;
 
-        private FirestoreChangeListener _listener;
+        private FirestoreChangeListener _roomListener;
+
+        private FirestoreChangeListener _roomsListener;
 
         public async Task<List<Room>> GetRoomsAsync()
         {
@@ -26,6 +28,24 @@ namespace ClientForm.Services
             return result;
         }
 
+        public void ListenRooms(Action<List<Room>> onUpdate)
+        {
+            _roomsListener = _db.Collection("rooms").Listen(snapshot =>
+            {
+                var rooms = new List<Room>();
+
+                foreach (var doc in snapshot.Documents)
+                {
+                    if (doc.Exists)
+                    {
+                        rooms.Add(doc.ConvertTo<Room>());
+                    }
+                }
+
+                onUpdate?.Invoke(rooms);
+            });
+        }
+
         public Task JoinRoomAsync(string roomId, Player player)
         {
             return _db.Collection("rooms")
@@ -37,25 +57,32 @@ namespace ClientForm.Services
         {
             DocumentReference docRef = _db.Collection("rooms").Document(roomId);
 
-            _listener = docRef.Listen(snapshot =>
+            _roomListener = docRef.Listen(snapshot =>
             {
                 if (snapshot == null || !snapshot.Exists)
                     return;
 
                 Room r = snapshot.ConvertTo<Room>();
-                onUpdate(r);
+                onUpdate?.Invoke(r);
             });
         }
 
         public void Stop()
         {
-            if (_listener != null)
+            if (_roomListener != null)
             {
-                _listener.StopAsync(CancellationToken.None)
-                         .GetAwaiter()
-                         .GetResult();
+                _roomListener.StopAsync(CancellationToken.None)
+                             .GetAwaiter()
+                             .GetResult();
+                _roomListener = null;
+            }
 
-                _listener = null;
+            if (_roomsListener != null)
+            {
+                _roomsListener.StopAsync(CancellationToken.None)
+                              .GetAwaiter()
+                              .GetResult();
+                _roomsListener = null;
             }
         }
     }

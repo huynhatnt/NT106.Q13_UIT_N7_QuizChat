@@ -211,6 +211,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuizPlayForm.resx">
+      <DependentUpon>QuizPlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomListForm.resx">
+      <DependentUpon>RoomListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

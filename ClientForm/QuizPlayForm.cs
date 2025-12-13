@@ -41,7 +41,7 @@ namespace ClientForm.Forms
             if (!IsDisposed && IsHandleCreated)
             {
                 try { Invoke(new Action(RefreshUI)); }
-                catch { /* form đã dispose */ }
+                catch { }
             }
         }
 
@@ -67,22 +67,21 @@ namespace ClientForm.Forms
                     var q = _questions[_room.CurrentQuestionIndex];
 
                     lblQ.Text = q.Text;
-                    btnA.Text = q.Options.ContainsKey("A") ? q.Options["A"] : "(trống)";
-                    btnB.Text = q.Options.ContainsKey("B") ? q.Options["B"] : "(trống)";
-                    btnC.Text = q.Options.ContainsKey("C") ? q.Options["C"] : "(trống)";
-                    btnD.Text = q.Options.ContainsKey("D") ? q.Options["D"] : "(trống)";
+                    btnA.Text = q.Options.ContainsKey("A") ? q.Options["A"] : "";
+                    btnB.Text = q.Options.ContainsKey("B") ? q.Options["B"] : "";
+                    btnC.Text = q.Options.ContainsKey("C") ? q.Options["C"] : "";
+                    btnD.Text = q.Options.ContainsKey("D") ? q.Options["D"] : "";
                 }
                 else
                 {
-                    lblQ.Text = "Câu hỏi không hợp lệ!";
+                    lblQ.Text = "";
                 }
             }
 
-            if (_room.State == QuizState.ShowingResult)
-                lblResult.Text = "Đang hiển thị kết quả...";
-
-            if (_room.State == QuizState.Finished)
-                lblResult.Text = "Quiz đã kết thúc!";
+            if (_room.Players != null && _room.Players.ContainsKey(_uid))
+            {
+                lblScore.Text = "Điểm: " + _room.Players[_uid].Score;
+            }
         }
 
         private async void Answer_Click(object sender, EventArgs e)
@@ -95,15 +94,8 @@ namespace ClientForm.Forms
 
             string ans = btn.Tag.ToString();
 
-            try
-            {
-                await _quizService.SubmitAnswerAsync(_roomId, _uid, ans);
-                lblResult.Text = "Bạn chọn: " + ans;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi gửi đáp án: " + ex.Message);
-            }
+            await _quizService.SubmitAnswerAsync(_roomId, _uid, ans);
+            lblResult.Text = "Bạn chọn: " + ans;
         }
     }
 }

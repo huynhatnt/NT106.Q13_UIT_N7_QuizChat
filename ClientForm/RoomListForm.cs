@@ -19,18 +19,30 @@ namespace ClientForm.Forms
             InitializeComponent();
             _uid = uid;
             _email = email;
-
-            LoadRooms();
         }
 
-        private async void LoadRooms()
+        protected override void OnLoad(EventArgs e)
         {
-            _rooms = await _roomService.GetRoomsAsync();
+            base.OnLoad(e);
+
+            // 🔥 Lắng nghe realtime danh sách phòng
+            _roomService.ListenRooms(UpdateRoomList);
+        }
+
+        private void UpdateRoomList(List<Room> rooms)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => UpdateRoomList(rooms)));
+                return;
+            }
+
+            _rooms = rooms;
             lstRooms.Items.Clear();
 
             foreach (Room r in _rooms)
             {
-                lstRooms.Items.Add(r.RoomId + " - " + r.Title);
+                lstRooms.Items.Add($"{r.RoomId} - {r.Title}");
             }
         }
 
@@ -40,10 +52,12 @@ namespace ClientForm.Forms
 
             Room room = _rooms[lstRooms.SelectedIndex];
 
-            Player p = new Player();
-            p.Uid = _uid;
-            p.Name = _email;
-            p.Score = 0;
+            Player p = new Player
+            {
+                Uid = _uid,
+                Name = _email,
+                Score = 0
+            };
 
             await _roomService.JoinRoomAsync(room.RoomId, p);
 

@@ -100,3 +100,5 @@ D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.csproj.C
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.csproj.Up2Date
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.exe
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.pdb
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.Forms.RoomListForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.Forms.QuizPlayForm.resources

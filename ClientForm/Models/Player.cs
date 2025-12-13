@@ -16,5 +16,8 @@ namespace QuizShared.Models
 
         [FirestoreProperty]
         public string SelectedAnswer { get; set; }
+
+        [FirestoreProperty]
+        public int LastScoredQuestionIndex { get; set; } = -1;
     }
 }

@@ -47,20 +47,16 @@ namespace ServerForm.Forms
 
         private void ListenRoom(string roomId)
         {
-            // Stop previous listener (nếu có)
             StopListener();
 
             var roomRef = FirestoreService.Db.Collection("rooms").Document(roomId);
 
-            // Firestore 2.5.0: callback chỉ có snapshot
             _listener = roomRef.Listen(snapshot =>
             {
                 if (snapshot == null || !snapshot.Exists)
                     return;
 
                 _room = snapshot.ConvertTo<Room>();
-
-                // Cập nhật UI từ thread Firestore → thread UI
                 Invoke(new Action(UpdateUI));
             });
         }
@@ -76,6 +72,15 @@ namespace ServerForm.Forms
 
             lblState.Text = $"State: {_room.State}";
             lblCurrent.Text = $"Câu: {_room.CurrentQuestionIndex + 1}";
+
+            if (_room.Questions != null)
+            {
+                btnNext.Enabled = _room.CurrentQuestionIndex < _room.Questions.Count - 1;
+            }
+            else
+            {
+                btnNext.Enabled = false;
+            }
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -95,7 +100,7 @@ namespace ServerForm.Forms
         private async void btnFinish_Click(object sender, EventArgs e)
         {
             if (_room != null)
-                await _quizManager.FinishQuizAsync(_room.RoomId);
+                await _quizManager.ShowResultAsync(_room.RoomId);
         }
 
         private void btnCreateQuiz_Click(object sender, EventArgs e)

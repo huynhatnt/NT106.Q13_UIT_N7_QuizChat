@@ -1,7 +1,60 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\serverform\\services\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\services\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\serverform\\serverdashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\serverdashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\serverform\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088D9E22-95ED-4F5E-B024-C49224E1878E}|ServerForm\\ServerForm.csproj|solutionrelative:serverform\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\quizplayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\quizplayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\quizplayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\quizplayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\roomlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\roomlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\roomlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\roomlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +87,161 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\Services\\QuizManager.cs",
+              "RelativeDocumentMoniker": "ServerForm\\Services\\QuizManager.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\Services\\QuizManager.cs",
+              "RelativeToolTip": "ServerForm\\Services\\QuizManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwEYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:18:55.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "ServerForm\\Models\\Player.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\Models\\Player.cs",
+              "RelativeToolTip": "ServerForm\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:11:06.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServerDashboardForm.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\ServerDashboardForm.cs",
+              "RelativeDocumentMoniker": "ServerForm\\ServerDashboardForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ServerForm\\ServerDashboardForm.cs",
+              "RelativeToolTip": "ServerForm\\ServerDashboardForm.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAcwGYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:08:58.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizPlayForm.cs [Design]",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\QuizPlayForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\QuizPlayForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\QuizPlayForm.cs [Design]",
+              "RelativeToolTip": "ClientForm\\QuizPlayForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:04:55.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\QuizService.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Services\\QuizService.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\QuizService.cs",
+              "RelativeToolTip": "ClientForm\\Services\\QuizService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:03:00.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Models\\Question.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Question.cs",
+              "RelativeToolTip": "ClientForm\\Models\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T08:00:34.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuizPlayForm.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\QuizPlayForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\QuizPlayForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\QuizPlayForm.cs",
+              "RelativeToolTip": "ClientForm\\QuizPlayForm.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA7wGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:58:31.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Models\\Player.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Player.cs",
+              "RelativeToolTip": "ClientForm\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:57:48.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Models\\Room.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Models\\Room.cs",
+              "RelativeToolTip": "ClientForm\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:57:38.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoomListForm.cs [Design]",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\RoomListForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\RoomListForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\RoomListForm.cs [Design]",
+              "RelativeToolTip": "ClientForm\\RoomListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:45:22.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoomListForm.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\RoomListForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\RoomListForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\RoomListForm.cs",
+              "RelativeToolTip": "ClientForm\\RoomListForm.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:26:01.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\LoginForm.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
+              "RelativeToolTip": "ClientForm\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:24:45.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Services\\RoomService.cs",
+              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\RoomService.cs",
+              "RelativeToolTip": "ClientForm\\Services\\RoomService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:24:28.006Z"
             }
           ]
         },

@@ -25,15 +25,16 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btnD = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblState
             // 
             this.lblState.AutoSize = true;
             this.lblState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblState.Location = new System.Drawing.Point(18, 15);
+            this.lblState.Location = new System.Drawing.Point(15, 13);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(51, 19);
+            this.lblState.Size = new System.Drawing.Size(57, 19);
             this.lblState.TabIndex = 0;
             this.lblState.Text = "State: -";
             // 
@@ -41,27 +42,27 @@
             // 
             this.lblIndex.AutoSize = true;
             this.lblIndex.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblIndex.Location = new System.Drawing.Point(18, 45);
+            this.lblIndex.Location = new System.Drawing.Point(15, 39);
             this.lblIndex.Name = "lblIndex";
-            this.lblIndex.Size = new System.Drawing.Size(81, 19);
+            this.lblIndex.Size = new System.Drawing.Size(85, 19);
             this.lblIndex.TabIndex = 1;
             this.lblIndex.Text = "Câu: (none)";
             // 
             // lblQ
             // 
             this.lblQ.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblQ.Location = new System.Drawing.Point(18, 80);
+            this.lblQ.Location = new System.Drawing.Point(15, 69);
             this.lblQ.Name = "lblQ";
-            this.lblQ.Size = new System.Drawing.Size(520, 80);
+            this.lblQ.Size = new System.Drawing.Size(446, 69);
             this.lblQ.TabIndex = 2;
             this.lblQ.Text = "Câu hỏi sẽ hiển thị ở đây";
             // 
             // btnA
             // 
             this.btnA.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnA.Location = new System.Drawing.Point(22, 180);
+            this.btnA.Location = new System.Drawing.Point(19, 156);
             this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(240, 50);
+            this.btnA.Size = new System.Drawing.Size(206, 43);
             this.btnA.TabIndex = 3;
             this.btnA.Tag = "A";
             this.btnA.Text = "Đáp án A";
@@ -71,9 +72,9 @@
             // btnB
             // 
             this.btnB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnB.Location = new System.Drawing.Point(300, 180);
+            this.btnB.Location = new System.Drawing.Point(257, 156);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(240, 50);
+            this.btnB.Size = new System.Drawing.Size(206, 43);
             this.btnB.TabIndex = 4;
             this.btnB.Tag = "B";
             this.btnB.Text = "Đáp án B";
@@ -83,9 +84,9 @@
             // btnC
             // 
             this.btnC.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnC.Location = new System.Drawing.Point(22, 250);
+            this.btnC.Location = new System.Drawing.Point(19, 217);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(240, 50);
+            this.btnC.Size = new System.Drawing.Size(206, 43);
             this.btnC.TabIndex = 5;
             this.btnC.Tag = "C";
             this.btnC.Text = "Đáp án C";
@@ -95,9 +96,9 @@
             // btnD
             // 
             this.btnD.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnD.Location = new System.Drawing.Point(300, 250);
+            this.btnD.Location = new System.Drawing.Point(257, 217);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(240, 50);
+            this.btnD.Size = new System.Drawing.Size(206, 43);
             this.btnD.TabIndex = 6;
             this.btnD.Tag = "D";
             this.btnD.Text = "Đáp án D";
@@ -108,17 +109,28 @@
             // 
             this.lblResult.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblResult.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblResult.Location = new System.Drawing.Point(22, 320);
+            this.lblResult.Location = new System.Drawing.Point(19, 277);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(518, 30);
+            this.lblResult.Size = new System.Drawing.Size(444, 26);
             this.lblResult.TabIndex = 7;
             this.lblResult.Text = "Kết quả: -";
             // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblScore.Location = new System.Drawing.Point(152, 9);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(51, 19);
+            this.lblScore.TabIndex = 8;
+            this.lblScore.Text = "Score:";
+            // 
             // QuizPlayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 370);
+            this.ClientSize = new System.Drawing.Size(475, 321);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnD);
             this.Controls.Add(this.btnC);
@@ -134,6 +146,7 @@
             this.Text = "Quiz";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -146,5 +159,6 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnD;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label lblScore;
     }
 }
