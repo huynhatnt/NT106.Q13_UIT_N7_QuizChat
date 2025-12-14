@@ -24,8 +24,6 @@ namespace ClientForm.Forms
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
-            // 🔥 Lắng nghe realtime danh sách phòng
             _roomService.ListenRooms(UpdateRoomList);
         }
 
@@ -42,7 +40,8 @@ namespace ClientForm.Forms
 
             foreach (Room r in _rooms)
             {
-                lstRooms.Items.Add($"{r.RoomId} - {r.Title}");
+                int count = r.Players != null ? r.Players.Count : 0;
+                lstRooms.Items.Add($"{r.RoomId} - {r.Title} ({count} người)");
             }
         }
 
@@ -61,7 +60,7 @@ namespace ClientForm.Forms
 
             await _roomService.JoinRoomAsync(room.RoomId, p);
 
-            QuizPlayForm form = new QuizPlayForm(room.RoomId, _uid);
+            QuizPlayForm form = new QuizPlayForm(room.RoomId, _uid, _email);
             this.Hide();
             form.Show();
         }

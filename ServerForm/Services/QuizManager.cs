@@ -42,10 +42,27 @@ namespace ServerForm.Services
 
         public async Task NextQuestionAsync(string roomId, int nextIndex)
         {
-            await Rooms.Document(roomId).UpdateAsync(new Dictionary<string, object>
+            var roomRef = Rooms.Document(roomId);
+
+            await _db.RunTransactionAsync(async tx =>
             {
-                { "State", QuizState.InQuestion },
-                { "CurrentQuestionIndex", nextIndex }
+                var snap = await tx.GetSnapshotAsync(roomRef);
+                if (!snap.Exists)
+                    return;
+
+                var room = snap.ConvertTo<Room>();
+
+                foreach (var p in room.Players.Values)
+                {
+                    p.SelectedAnswer = null;
+                }
+
+                tx.Update(roomRef, new Dictionary<string, object>
+        {
+            { "Players", room.Players },
+            { "State", QuizState.InQuestion },
+            { "CurrentQuestionIndex", nextIndex }
+        });
             });
         }
 
@@ -86,7 +103,8 @@ namespace ServerForm.Services
 
         public async Task FinishQuizAsync(string roomId)
         {
-            await Rooms.Document(roomId).UpdateAsync("State", QuizState.Finished);
+            var roomRef = Rooms.Document(roomId);
+            await roomRef.UpdateAsync("State", QuizState.Finished);
         }
     }
 }

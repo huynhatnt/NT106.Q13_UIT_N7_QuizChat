@@ -36,9 +36,9 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblEmail.Location = new System.Drawing.Point(24, 22);
+            this.lblEmail.Location = new System.Drawing.Point(21, 19);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(47, 19);
+            this.lblEmail.Size = new System.Drawing.Size(44, 19);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email:";
             // 
@@ -46,7 +46,7 @@
             // 
             this.lblPass.AutoSize = true;
             this.lblPass.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblPass.Location = new System.Drawing.Point(24, 72);
+            this.lblPass.Location = new System.Drawing.Point(21, 62);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(70, 19);
             this.lblPass.TabIndex = 1;
@@ -54,25 +54,25 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(115, 20);
+            this.txtEmail.Location = new System.Drawing.Point(99, 17);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(226, 23);
+            this.txtEmail.Size = new System.Drawing.Size(194, 20);
             this.txtEmail.TabIndex = 2;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(115, 70);
+            this.txtPass.Location = new System.Drawing.Point(99, 61);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.Size = new System.Drawing.Size(226, 23);
+            this.txtPass.Size = new System.Drawing.Size(194, 20);
             this.txtPass.TabIndex = 3;
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnLogin.Location = new System.Drawing.Point(65, 122);
+            this.btnLogin.Location = new System.Drawing.Point(56, 106);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(92, 36);
+            this.btnLogin.Size = new System.Drawing.Size(90, 31);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnRegister.Location = new System.Drawing.Point(208, 122);
+            this.btnRegister.Location = new System.Drawing.Point(178, 106);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(92, 36);
+            this.btnRegister.Size = new System.Drawing.Size(90, 31);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Đăng ký";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             // LoginForm
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 185);
+            this.ClientSize = new System.Drawing.Size(322, 160);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);

@@ -35,6 +35,14 @@ namespace ServerForm.Services
             return newRoom.RoomId;
         }
 
+        public Task DeleteRoomAsync(string roomId)
+        {
+            return FirestoreService.Db
+                .Collection("rooms")
+                .Document(roomId)
+                .DeleteAsync();
+        }
+
         public async Task AddPlayerAsync(string roomId, Player player)
         {
             await Rooms.Document(roomId).UpdateAsync($"Players.{player.Uid}", player);

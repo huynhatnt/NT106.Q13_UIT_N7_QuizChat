@@ -99,10 +99,25 @@ namespace ServerForm.Forms
 
         private async void btnFinish_Click(object sender, EventArgs e)
         {
+            if (_room == null) return;
+
+            await _quizManager.FinishQuizAsync(_room.RoomId);
+
+            btnStart.Enabled = false;
+            btnNext.Enabled = false;
+            btnFinish.Enabled = false;
+            btnCheck.Enabled = false;
+
+            using (var result = new ServerResultForm(_room))
+            {
+                result.ShowDialog();
+            }
+        }
+        private async void btnCheck_Click(object sender, EventArgs e)
+        {
             if (_room != null)
                 await _quizManager.ShowResultAsync(_room.RoomId);
         }
-
         private void btnCreateQuiz_Click(object sender, EventArgs e)
         {
             new QuizEditorForm().ShowDialog();

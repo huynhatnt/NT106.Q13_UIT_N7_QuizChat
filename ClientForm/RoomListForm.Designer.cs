@@ -43,6 +43,8 @@
             // 
             // btnJoin
             // 
+            this.btnJoin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnJoin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btnJoin.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnJoin.Location = new System.Drawing.Point(92, 235);
             this.btnJoin.Name = "btnJoin";
