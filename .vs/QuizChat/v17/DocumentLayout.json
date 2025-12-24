@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\nt106\\nt106.q13_uit_n7_quizchat\\clientform\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\nt106\\nt106.q13_uit_n7_quizchat\\clientform\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\forgotpasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\nt106\\nt106.q13_uit_n7_quizchat\\clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\nt106\\nt106.q13_uit_n7_quizchat\\clientform\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\nt106\\nt106.q13_uit_n7_quizchat\\clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,49 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ClientForm\\Services\\AuthService.cs",
+              "ToolTip": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\Services\\AuthService.cs",
+              "RelativeToolTip": "ClientForm\\Services\\AuthService.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAowGQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:22:56.503Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgotPasswordForm.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\ForgotPasswordForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\ForgotPasswordForm.cs",
+              "ToolTip": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\ForgotPasswordForm.cs",
+              "RelativeToolTip": "ClientForm\\ForgotPasswordForm.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAYwLAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:21:34.392Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgotPasswordForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\ForgotPasswordForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\ForgotPasswordForm.cs",
+              "ToolTip": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\ForgotPasswordForm.cs [Design]",
+              "RelativeToolTip": "ClientForm\\ForgotPasswordForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:20:14.35Z",
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\LoginForm.cs",
+              "ToolTip": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
+              "RelativeToolTip": "ClientForm\\LoginForm.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:19:26.536Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClientForm\\LoginForm.cs",
+              "ToolTip": "D:\\NT106\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs [Design]",
+              "RelativeToolTip": "ClientForm\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:18:04.558Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

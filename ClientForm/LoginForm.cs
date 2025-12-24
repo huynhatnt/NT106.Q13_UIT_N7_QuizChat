@@ -37,5 +37,10 @@ namespace ClientForm.Forms
         {
             new RegisterForm().ShowDialog();
         }
+
+        private void btnForgotPassword_Click(object sender, EventArgs e)
+        {
+            new ForgotPasswordForm().ShowDialog();
+        }
     }
 }
