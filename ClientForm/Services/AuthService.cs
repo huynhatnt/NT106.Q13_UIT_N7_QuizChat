@@ -73,5 +73,54 @@ namespace ClientForm.Services
 
             return new Tuple<string, string>(uid, mail);
         }
+        public async Task SendResetPasswordEmailAsync(string email)
+        {
+            string url =
+                "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=" + ApiKey;
+
+            var payload = new
+            {
+                requestType = "PASSWORD_RESET",
+                email = email
+            };
+
+            HttpContent content = CreateJsonContent(payload);
+            HttpResponseMessage res = await _http.PostAsync(url, content);
+            string json = await res.Content.ReadAsStringAsync();
+
+            if (!res.IsSuccessStatusCode)
+                throw new Exception("Gửi email reset password thất bại: " + json);
+        }
+        public async Task<bool> IsEmailExistsAsync(string email)
+        {
+            string url =
+                "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + ApiKey;
+
+            var payload = new
+            {
+                email = email,
+                password = "dummy_password_for_check",
+                returnSecureToken = false
+            };
+
+            HttpContent content = CreateJsonContent(payload);
+            HttpResponseMessage res = await _http.PostAsync(url, content);
+            string json = await res.Content.ReadAsStringAsync();
+
+            if (res.IsSuccessStatusCode)
+                return true;
+
+            var obj = JObject.Parse(json);
+            string error = obj["error"]?["message"]?.ToString();
+
+            // ❗ Firebase mới
+            if (error == "EMAIL_NOT_FOUND")
+                return false;
+
+            if (error == "INVALID_PASSWORD" || error == "INVALID_LOGIN_CREDENTIALS")
+                return true;
+
+            throw new Exception("Không thể kiểm tra email: " + json);
+        }
     }
 }
