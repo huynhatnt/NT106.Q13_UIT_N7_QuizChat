@@ -33,12 +33,12 @@
             this.btnCheck = new System.Windows.Forms.Button();
             this.btnFinish = new System.Windows.Forms.Button();
             this.grpQuestion = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.txtCurQuestion = new System.Windows.Forms.TextBox();
-            this.txtCurA = new System.Windows.Forms.TextBox();
-            this.txtCurD = new System.Windows.Forms.TextBox();
-            this.txtCurB = new System.Windows.Forms.TextBox();
             this.txtCurC = new System.Windows.Forms.TextBox();
+            this.txtCurB = new System.Windows.Forms.TextBox();
+            this.txtCurD = new System.Windows.Forms.TextBox();
+            this.txtCurA = new System.Windows.Forms.TextBox();
+            this.txtCurQuestion = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.grpRoom.SuspendLayout();
             this.grpState.SuspendLayout();
             this.grpPlayers.SuspendLayout();
@@ -52,9 +52,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(215, 18);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(184, 23);
+            this.lblTitle.Size = new System.Drawing.Size(224, 23);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "SERVER DASHBOARD";
+            this.lblTitle.Text = "BẢNG ĐIỀU KHIỂN SERVER\r\n";
             // 
             // grpRoom
             // 
@@ -75,9 +75,9 @@
             this.lblRoomTitle.AutoSize = true;
             this.lblRoomTitle.Location = new System.Drawing.Point(15, 30);
             this.lblRoomTitle.Name = "lblRoomTitle";
-            this.lblRoomTitle.Size = new System.Drawing.Size(71, 17);
+            this.lblRoomTitle.Size = new System.Drawing.Size(51, 17);
             this.lblRoomTitle.TabIndex = 0;
-            this.lblRoomTitle.Text = "Room Title";
+            this.lblRoomTitle.Text = "Tiêu đề";
             // 
             // txtRoomTitle
             // 
@@ -92,7 +92,7 @@
             this.btnCreateRoom.Name = "btnCreateRoom";
             this.btnCreateRoom.Size = new System.Drawing.Size(160, 30);
             this.btnCreateRoom.TabIndex = 2;
-            this.btnCreateRoom.Text = "Create Room";
+            this.btnCreateRoom.Text = "Tạo phòng";
             this.btnCreateRoom.Click += new System.EventHandler(this.btnCreateRoom_Click);
             // 
             // btnCreateQuiz
@@ -101,7 +101,7 @@
             this.btnCreateQuiz.Name = "btnCreateQuiz";
             this.btnCreateQuiz.Size = new System.Drawing.Size(160, 30);
             this.btnCreateQuiz.TabIndex = 3;
-            this.btnCreateQuiz.Text = "Create Quiz";
+            this.btnCreateQuiz.Text = "Tạo Quiz\r\n";
             this.btnCreateQuiz.Click += new System.EventHandler(this.btnCreateQuiz_Click);
             // 
             // lblRoomId
@@ -109,9 +109,9 @@
             this.lblRoomId.AutoSize = true;
             this.lblRoomId.Location = new System.Drawing.Point(15, 70);
             this.lblRoomId.Name = "lblRoomId";
-            this.lblRoomId.Size = new System.Drawing.Size(71, 17);
+            this.lblRoomId.Size = new System.Drawing.Size(73, 17);
             this.lblRoomId.TabIndex = 4;
-            this.lblRoomId.Text = "Room ID: -";
+            this.lblRoomId.Text = "ID Phòng: -";
             // 
             // grpState
             // 
@@ -129,9 +129,9 @@
             this.lblState.AutoSize = true;
             this.lblState.Location = new System.Drawing.Point(15, 30);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(49, 17);
+            this.lblState.Size = new System.Drawing.Size(78, 17);
             this.lblState.TabIndex = 0;
-            this.lblState.Text = "State: -";
+            this.lblState.Text = "Trạng thái: -";
             // 
             // lblCurrent
             // 
@@ -179,7 +179,7 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(120, 35);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Bắt đầu";
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnNext
@@ -188,7 +188,7 @@
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(120, 35);
             this.btnNext.TabIndex = 1;
-            this.btnNext.Text = "Next";
+            this.btnNext.Text = "Câu tiếp";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnCheck
@@ -197,7 +197,7 @@
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(120, 35);
             this.btnCheck.TabIndex = 2;
-            this.btnCheck.Text = "Check Result";
+            this.btnCheck.Text = "Kiểm tra";
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnFinish
@@ -206,7 +206,7 @@
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Size = new System.Drawing.Size(120, 35);
             this.btnFinish.TabIndex = 3;
-            this.btnFinish.Text = "Finish";
+            this.btnFinish.Text = "Hoàn thành";
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // grpQuestion
@@ -223,32 +223,14 @@
             this.grpQuestion.TabStop = false;
             this.grpQuestion.Text = "Question";
             // 
-            // txtCurQuestion
+            // txtCurC
             // 
-            this.txtCurQuestion.Location = new System.Drawing.Point(20, 23);
-            this.txtCurQuestion.Multiline = true;
-            this.txtCurQuestion.Name = "txtCurQuestion";
-            this.txtCurQuestion.ReadOnly = true;
-            this.txtCurQuestion.Size = new System.Drawing.Size(565, 30);
-            this.txtCurQuestion.TabIndex = 0;
-            // 
-            // txtCurA
-            // 
-            this.txtCurA.Location = new System.Drawing.Point(18, 64);
-            this.txtCurA.Multiline = true;
-            this.txtCurA.Name = "txtCurA";
-            this.txtCurA.ReadOnly = true;
-            this.txtCurA.Size = new System.Drawing.Size(135, 30);
-            this.txtCurA.TabIndex = 1;
-            // 
-            // txtCurD
-            // 
-            this.txtCurD.Location = new System.Drawing.Point(451, 64);
-            this.txtCurD.Multiline = true;
-            this.txtCurD.Name = "txtCurD";
-            this.txtCurD.ReadOnly = true;
-            this.txtCurD.Size = new System.Drawing.Size(135, 30);
-            this.txtCurD.TabIndex = 2;
+            this.txtCurC.Location = new System.Drawing.Point(307, 64);
+            this.txtCurC.Multiline = true;
+            this.txtCurC.Name = "txtCurC";
+            this.txtCurC.ReadOnly = true;
+            this.txtCurC.Size = new System.Drawing.Size(135, 30);
+            this.txtCurC.TabIndex = 4;
             // 
             // txtCurB
             // 
@@ -259,14 +241,32 @@
             this.txtCurB.Size = new System.Drawing.Size(135, 30);
             this.txtCurB.TabIndex = 3;
             // 
-            // txtCurC
+            // txtCurD
             // 
-            this.txtCurC.Location = new System.Drawing.Point(307, 64);
-            this.txtCurC.Multiline = true;
-            this.txtCurC.Name = "txtCurC";
-            this.txtCurC.ReadOnly = true;
-            this.txtCurC.Size = new System.Drawing.Size(135, 30);
-            this.txtCurC.TabIndex = 4;
+            this.txtCurD.Location = new System.Drawing.Point(451, 64);
+            this.txtCurD.Multiline = true;
+            this.txtCurD.Name = "txtCurD";
+            this.txtCurD.ReadOnly = true;
+            this.txtCurD.Size = new System.Drawing.Size(135, 30);
+            this.txtCurD.TabIndex = 2;
+            // 
+            // txtCurA
+            // 
+            this.txtCurA.Location = new System.Drawing.Point(18, 64);
+            this.txtCurA.Multiline = true;
+            this.txtCurA.Name = "txtCurA";
+            this.txtCurA.ReadOnly = true;
+            this.txtCurA.Size = new System.Drawing.Size(135, 30);
+            this.txtCurA.TabIndex = 1;
+            // 
+            // txtCurQuestion
+            // 
+            this.txtCurQuestion.Location = new System.Drawing.Point(20, 23);
+            this.txtCurQuestion.Multiline = true;
+            this.txtCurQuestion.Name = "txtCurQuestion";
+            this.txtCurQuestion.ReadOnly = true;
+            this.txtCurQuestion.Size = new System.Drawing.Size(565, 30);
+            this.txtCurQuestion.TabIndex = 0;
             // 
             // ServerDashboardForm
             // 

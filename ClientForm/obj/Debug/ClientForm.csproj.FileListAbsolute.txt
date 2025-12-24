@@ -206,3 +206,6 @@ D:\NT106\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.csproj.Up2Dat
 D:\NT106\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.exe
 D:\NT106\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.pdb
 D:\NT106\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.ForgotPasswordForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.ForgotPasswordForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.Forms.RegisterForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ClientForm\obj\Debug\ClientForm.Forms.ResultForm.resources

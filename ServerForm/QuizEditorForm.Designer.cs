@@ -52,11 +52,11 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(220, 10);
+            this.lblTitle.Location = new System.Drawing.Point(206, 10);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(107, 25);
+            this.lblTitle.Size = new System.Drawing.Size(167, 25);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Quiz Editor";
+            this.lblTitle.Text = "ĐIỀU CHỈNH QUIZ";
             // 
             // grpQuiz
             // 
@@ -74,9 +74,9 @@
             this.lblQuizTitle.AutoSize = true;
             this.lblQuizTitle.Location = new System.Drawing.Point(15, 30);
             this.lblQuizTitle.Name = "lblQuizTitle";
-            this.lblQuizTitle.Size = new System.Drawing.Size(32, 17);
+            this.lblQuizTitle.Size = new System.Drawing.Size(51, 17);
             this.lblQuizTitle.TabIndex = 0;
-            this.lblQuizTitle.Text = "Title";
+            this.lblQuizTitle.Text = "Tiêu đề";
             // 
             // txtQuizTitle
             // 
@@ -102,7 +102,7 @@
             this.grpEditor.Controls.Add(this.lblTime);
             this.grpEditor.Controls.Add(this.numTime);
             this.grpEditor.Controls.Add(this.btnAddQuestion);
-            this.grpEditor.Location = new System.Drawing.Point(20, 115);
+            this.grpEditor.Location = new System.Drawing.Point(20, 118);
             this.grpEditor.Name = "grpEditor";
             this.grpEditor.Size = new System.Drawing.Size(520, 260);
             this.grpEditor.TabIndex = 2;
@@ -115,7 +115,7 @@
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(69, 23);
             this.lblQuestion.TabIndex = 0;
-            this.lblQuestion.Text = "Question";
+            this.lblQuestion.Text = "Câu hỏi";
             // 
             // txtQuestion
             // 
@@ -188,9 +188,9 @@
             // 
             this.lblCorrect.Location = new System.Drawing.Point(15, 205);
             this.lblCorrect.Name = "lblCorrect";
-            this.lblCorrect.Size = new System.Drawing.Size(69, 23);
+            this.lblCorrect.Size = new System.Drawing.Size(52, 23);
             this.lblCorrect.TabIndex = 10;
-            this.lblCorrect.Text = "Correct";
+            this.lblCorrect.Text = "Đáp án";
             // 
             // cboCorrectAnswer
             // 
@@ -202,11 +202,11 @@
             // 
             // lblTime
             // 
-            this.lblTime.Location = new System.Drawing.Point(190, 205);
+            this.lblTime.Location = new System.Drawing.Point(175, 205);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(44, 23);
+            this.lblTime.Size = new System.Drawing.Size(62, 23);
             this.lblTime.TabIndex = 12;
-            this.lblTime.Text = "Time";
+            this.lblTime.Text = "Thời gian";
             // 
             // numTime
             // 
@@ -236,14 +236,14 @@
             this.btnAddQuestion.Name = "btnAddQuestion";
             this.btnAddQuestion.Size = new System.Drawing.Size(110, 30);
             this.btnAddQuestion.TabIndex = 14;
-            this.btnAddQuestion.Text = "Add";
+            this.btnAddQuestion.Text = "Thêm";
             this.btnAddQuestion.Click += new System.EventHandler(this.btnAddQuestion_Click);
             // 
             // grpList
             // 
             this.grpList.Controls.Add(this.lstQuestions);
             this.grpList.Controls.Add(this.btnDelete);
-            this.grpList.Location = new System.Drawing.Point(20, 380);
+            this.grpList.Location = new System.Drawing.Point(20, 388);
             this.grpList.Name = "grpList";
             this.grpList.Size = new System.Drawing.Size(300, 170);
             this.grpList.TabIndex = 3;
@@ -262,17 +262,17 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(190, 140);
+            this.btnDelete.Location = new System.Drawing.Point(190, 136);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(100, 25);
+            this.btnDelete.Size = new System.Drawing.Size(100, 27);
             this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xóa";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // grpPreview
             // 
             this.grpPreview.Controls.Add(this.txtPreview);
-            this.grpPreview.Location = new System.Drawing.Point(330, 380);
+            this.grpPreview.Location = new System.Drawing.Point(330, 388);
             this.grpPreview.Name = "grpPreview";
             this.grpPreview.Size = new System.Drawing.Size(210, 170);
             this.grpPreview.TabIndex = 4;
@@ -295,7 +295,7 @@
             this.btnSaveQuiz.Name = "btnSaveQuiz";
             this.btnSaveQuiz.Size = new System.Drawing.Size(140, 40);
             this.btnSaveQuiz.TabIndex = 5;
-            this.btnSaveQuiz.Text = "Save Quiz";
+            this.btnSaveQuiz.Text = "Lưu Quiz";
             this.btnSaveQuiz.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // QuizEditorForm

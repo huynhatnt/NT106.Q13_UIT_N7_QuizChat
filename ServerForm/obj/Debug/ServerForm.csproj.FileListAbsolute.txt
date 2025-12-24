@@ -104,3 +104,4 @@ D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.pdb
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.QuizEditorForm.resources
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.QuizSelectForm.resources
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.ServerDashboardForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.ServerResultForm.resources

@@ -32,7 +32,7 @@ namespace ClientForm.Forms
                 _generatedOtp = new Random().Next(100000, 999999).ToString();
                 _otpCreatedTime = DateTime.Now;
 
-                OtpEmailService.SendOtp(email, _generatedOtp);
+                OTPEmailService.SendOtp(email, _generatedOtp);
 
                 MessageBox.Show($"OTP đã được gửi tới {email}");
             }
@@ -105,32 +105,39 @@ namespace ClientForm.Forms
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             SetPlaceholder(txtEmail, "email@example.com");
+            SetPlaceholder(txtPass, "Password");
             SetPlaceholder(txtOTP, "Nhập OTP");
             SetPlaceholder(txtConfirmPass, "Confirm Password");
         }
         private void TextBox_Enter(object sender, EventArgs e)
         {
             TextBox txt = sender as TextBox;
+            if (txt == null || txt.Tag == null) return;
 
             if (txt.Text == txt.Tag.ToString())
             {
                 txt.Text = "";
                 txt.ForeColor = Color.Black;
+
                 if (txt == txtPass || txt == txtConfirmPass)
                     txt.UseSystemPasswordChar = true;
             }
         }
         private void TextBox_Leave(object sender, EventArgs e)
         {
-            TextBox txt = sender as TextBox;
+            if (!(sender is TextBox txt))
+                return;
 
             if (string.IsNullOrWhiteSpace(txt.Text))
             {
-                txt.Text = txt.Tag.ToString();
-                txt.ForeColor = Color.Gray;
+                if (txt.Tag is string placeholder)
+                {
+                    txt.Text = placeholder;
+                    txt.ForeColor = Color.Gray;
 
-                if (txt == txtPass || txt == txtConfirmPass)
-                    txt.UseSystemPasswordChar = false;
+                    if (txt == txtPass || txt == txtConfirmPass)
+                        txt.UseSystemPasswordChar = false;
+                }
             }
         }
 

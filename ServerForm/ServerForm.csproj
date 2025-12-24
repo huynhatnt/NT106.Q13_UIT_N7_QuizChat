@@ -211,6 +211,9 @@
     <EmbeddedResource Include="ServerDashboardForm.resx">
       <DependentUpon>ServerDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ServerResultForm.resx">
+      <DependentUpon>ServerResultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

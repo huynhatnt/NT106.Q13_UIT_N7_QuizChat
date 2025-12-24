@@ -3,7 +3,7 @@ using System.Net.Mail;
 
 namespace ClientForm.Services
 {
-    public static class OtpEmailService
+    public static class OTPEmailService
     {
         public static void SendOtp(string toEmail, string otp)
         {

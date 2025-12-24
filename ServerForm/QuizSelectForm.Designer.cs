@@ -29,9 +29,9 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(150, 15);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(113, 23);
+            this.lblTitle.Size = new System.Drawing.Size(105, 23);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Select a Quiz";
+            this.lblTitle.Text = "CHỌN QUIZ";
             // 
             // grpList
             // 
@@ -57,7 +57,7 @@
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(110, 32);
             this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "Chọn";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
@@ -66,7 +66,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(110, 32);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Hủy";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // QuizSelectForm

@@ -208,7 +208,7 @@
     </Compile>
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\FirebaseService.cs" />
-    <Compile Include="Services\OtpEmailService.cs" />
+    <Compile Include="Services\OTPEmailService.cs" />
     <Compile Include="Services\QuizService.cs" />
     <Compile Include="Services\RoomService.cs" />
     <Compile Include="Services\UserService.cs" />
@@ -232,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomListForm.resx">
       <DependentUpon>RoomListForm.cs</DependentUpon>

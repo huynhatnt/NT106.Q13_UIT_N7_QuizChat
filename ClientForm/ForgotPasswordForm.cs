@@ -73,11 +73,12 @@ namespace ClientForm
                 _otpAttempts = 0;
 
                 await Task.Run(() =>
-                    OtpEmailService.SendOtp(email, _generatedOtp)
+                    OTPEmailService.SendOtp(email, _generatedOtp)
                 );
 
                 _otpRemainingSeconds = OTP_TTL_MINUTES * 60;
                 btnOTP.Enabled = false;
+                lblOtpCountdown.Visible = true;
                 UpdateOtpCountdown();
                 _otpTimer.Start();
 
@@ -178,13 +179,9 @@ namespace ClientForm
             _otpTimer.Stop();
             _generatedOtp = null;
             btnOTP.Enabled = true;
-        }
 
-        private void ForgotPasswordForm_Load(object sender, EventArgs e)
-        {
-            //lblOtpCountdown.Text = "OTP còn hiệu lực: --:--";
+            lblOtpCountdown.Visible = false;
         }
-
 
     }
 }
