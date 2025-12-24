@@ -30,15 +30,16 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.btnForgot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblEmail.Location = new System.Drawing.Point(24, 22);
+            this.lblEmail.Location = new System.Drawing.Point(27, 23);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(47, 19);
+            this.lblEmail.Size = new System.Drawing.Size(55, 23);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email:";
             // 
@@ -46,33 +47,33 @@
             // 
             this.lblPass.AutoSize = true;
             this.lblPass.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblPass.Location = new System.Drawing.Point(24, 72);
+            this.lblPass.Location = new System.Drawing.Point(27, 77);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(70, 19);
+            this.lblPass.Size = new System.Drawing.Size(84, 23);
             this.lblPass.TabIndex = 1;
             this.lblPass.Text = "Password:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(115, 20);
+            this.txtEmail.Location = new System.Drawing.Point(131, 21);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(226, 23);
+            this.txtEmail.Size = new System.Drawing.Size(303, 22);
             this.txtEmail.TabIndex = 2;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(115, 70);
+            this.txtPass.Location = new System.Drawing.Point(131, 75);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.Size = new System.Drawing.Size(226, 23);
+            this.txtPass.Size = new System.Drawing.Size(303, 22);
             this.txtPass.TabIndex = 3;
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnLogin.Location = new System.Drawing.Point(65, 122);
+            this.btnLogin.Location = new System.Drawing.Point(198, 191);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(92, 36);
+            this.btnLogin.Size = new System.Drawing.Size(149, 38);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -81,20 +82,32 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnRegister.Location = new System.Drawing.Point(208, 122);
+            this.btnRegister.Location = new System.Drawing.Point(329, 124);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(92, 36);
+            this.btnRegister.Size = new System.Drawing.Size(105, 38);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Đăng ký";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // btnForgot
+            // 
+            this.btnForgot.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnForgot.Location = new System.Drawing.Point(63, 124);
+            this.btnForgot.Name = "btnForgot";
+            this.btnForgot.Size = new System.Drawing.Size(151, 38);
+            this.btnForgot.TabIndex = 6;
+            this.btnForgot.Text = "Quên mật khẩu";
+            this.btnForgot.UseVisualStyleBackColor = true;
+            this.btnForgot.Click += new System.EventHandler(this.btnForgot_Click);
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 185);
+            this.ClientSize = new System.Drawing.Size(559, 272);
+            this.Controls.Add(this.btnForgot);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);
@@ -119,5 +132,6 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnForgot;
     }
 }

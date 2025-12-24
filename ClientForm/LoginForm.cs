@@ -32,10 +32,15 @@ namespace ClientForm.Forms
                 MessageBox.Show(ex.Message, "Đăng nhập thất bại");
             }
         }
-
+         
         private void btnRegister_Click(object sender, EventArgs e)
         {
             new RegisterForm().ShowDialog();
+        }
+
+        private void btnForgot_Click(object sender, EventArgs e)
+        {
+            new Forgot().ShowDialog();
         }
     }
 }
