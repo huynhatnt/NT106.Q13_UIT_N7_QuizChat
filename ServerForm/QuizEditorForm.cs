@@ -36,7 +36,7 @@ namespace ServerForm.Forms
 
             _questions.Add(q);
             lstQuestions.Items.Add(q.Text);
-
+            btnSaveQuiz.Enabled = _questions.Count > 0;
             ClearFields();
         }
 
@@ -67,5 +67,49 @@ namespace ServerForm.Forms
             MessageBox.Show($"Quiz đã lưu!\nQuiz ID: {id}");
             this.Close();
         }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int i = lstQuestions.SelectedIndex;
+            if (i < 0) return;
+
+            _questions.RemoveAt(i);
+            lstQuestions.Items.RemoveAt(i);
+            txtPreview.Clear();
+            btnSaveQuiz.Enabled = _questions.Count > 0;
+        }
+        private void lstQuestions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int i = lstQuestions.SelectedIndex;
+            if (i < 0) return;
+
+            var q = _questions[i];
+            txtPreview.Text =
+                q.Text + Environment.NewLine +
+                $"A. {q.Options["A"]}" + Environment.NewLine +
+                $"B. {q.Options["B"]}" + Environment.NewLine +
+                $"C. {q.Options["C"]}" + Environment.NewLine +
+                $"D. {q.Options["D"]}" + Environment.NewLine +
+                $"Correct: {q.CorrectAnswer}, Time: {q.TimeLimitSeconds}s";
+        }
+        private void lstQuestions_DoubleClick(object sender, EventArgs e)
+        {
+            int i = lstQuestions.SelectedIndex;
+            if (i < 0) return;
+
+            var q = _questions[i];
+
+            txtQuestion.Text = q.Text;
+            txtA.Text = q.Options["A"];
+            txtB.Text = q.Options["B"];
+            txtC.Text = q.Options["C"];
+            txtD.Text = q.Options["D"];
+            cboCorrectAnswer.SelectedItem = q.CorrectAnswer;
+            numTime.Value = q.TimeLimitSeconds;
+
+            _questions.RemoveAt(i);
+            lstQuestions.Items.RemoveAt(i);
+            btnSaveQuiz.Enabled = _questions.Count > 0;
+        }
+
     }
 }

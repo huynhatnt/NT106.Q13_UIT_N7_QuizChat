@@ -36,7 +36,6 @@ D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Collections.
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Interactive.Async.dll
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Linq.Async.dll
-D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Linq.AsyncEnumerable.dll
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Memory.dll
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Net.Http.WinHttpHandler.dll
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Numerics.Vectors.dll
@@ -88,7 +87,6 @@ D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Collections.
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Interactive.Async.xml
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Linq.Async.xml
-D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Linq.AsyncEnumerable.xml
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Memory.xml
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Net.Http.WinHttpHandler.xml
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\bin\Debug\System.Numerics.Vectors.xml
@@ -103,3 +101,7 @@ D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.csproj.C
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.csproj.Up2Date
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.exe
 D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.pdb
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.QuizEditorForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.QuizSelectForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.ServerDashboardForm.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\ServerForm\obj\Debug\ServerForm.Forms.ServerResultForm.resources

@@ -1,7 +1,8 @@
-﻿using QuizShared.Models;
+﻿using Google.Cloud.Firestore;
+using QuizShared.Models;
 using ServerForm.Services;
-using Google.Cloud.Firestore;
 using System;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -23,6 +24,20 @@ namespace ServerForm.Forms
 
         private async void btnCreateRoom_Click(object sender, EventArgs e)
         {
+            string title = txtRoomTitle.Text.Trim();
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Tên phòng (Room Title) không được để trống.\n\n" +
+                    "Vui lòng nhập tên phòng trước khi tạo room.",
+                    "Thiếu thông tin",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                txtRoomTitle.Focus();
+                return;
+            }
+
             var allQuiz = await _quizRepo.GetAllQuizAsync();
 
             if (allQuiz.Count == 0)
@@ -36,8 +51,15 @@ namespace ServerForm.Forms
                 return;
 
             string selectedQuizId = selectForm.SelectedQuizId;
+            var selectedQuiz = allQuiz
+    .FirstOrDefault(q => q.QuizId == selectedQuizId);
+            if (selectedQuiz == null ||
+    string.IsNullOrWhiteSpace(selectedQuiz.Title))
+            {
+                MessageBox.Show("Quiz được chọn không có tên hợp lệ!");
+                return;
+            }
             string host = "HOST";
-            string title = txtRoomTitle.Text.Trim();
 
             string roomId = await _roomManager.CreateRoomAsync(host, title, selectedQuizId);
             lblRoomId.Text = $"Room ID: {roomId}";
@@ -47,22 +69,33 @@ namespace ServerForm.Forms
 
         private void ListenRoom(string roomId)
         {
-            // Stop previous listener (nếu có)
             StopListener();
 
             var roomRef = FirestoreService.Db.Collection("rooms").Document(roomId);
 
-            // Firestore 2.5.0: callback chỉ có snapshot
             _listener = roomRef.Listen(snapshot =>
             {
                 if (snapshot == null || !snapshot.Exists)
                     return;
 
                 _room = snapshot.ConvertTo<Room>();
-
-                // Cập nhật UI từ thread Firestore → thread UI
                 Invoke(new Action(UpdateUI));
             });
+        }
+        private void ResetDashboardUI()
+        {
+            lblState.Text = "State: -";
+            lblCurrent.Text = "Câu: -";
+            lblRoomId.Text = "Room ID: -";
+
+            lstPlayers.Items.Clear();
+            ClearCurrentQuestion();
+
+            btnStart.Enabled = false;
+            btnNext.Enabled = false;
+            btnCheck.Enabled = false;
+            btnFinish.Enabled = false;
+
         }
 
         private void UpdateUI()
@@ -76,6 +109,49 @@ namespace ServerForm.Forms
 
             lblState.Text = $"State: {_room.State}";
             lblCurrent.Text = $"Câu: {_room.CurrentQuestionIndex + 1}";
+
+            if (_room.Questions != null)
+            {
+                btnNext.Enabled = _room.CurrentQuestionIndex < _room.Questions.Count - 1;
+            }
+            else
+            {
+                btnNext.Enabled = false;
+            }
+            UpdateCurrentQuestion();
+        }
+        private void UpdateCurrentQuestion()
+        {
+            if (_room == null || _room.Questions == null)
+            {
+                ClearCurrentQuestion();
+                return;
+            }
+
+            int index = _room.CurrentQuestionIndex;
+
+            if (index < 0 || index >= _room.Questions.Count)
+            {
+                ClearCurrentQuestion();
+                return;
+            }
+
+            var q = _room.Questions[index];
+
+            txtCurQuestion.Text = q.Text;
+            txtCurA.Text = "A. " + q.Options["A"];
+            txtCurB.Text = "B. " + q.Options["B"];
+            txtCurC.Text = "C. " + q.Options["C"];
+            txtCurD.Text = "D. " + q.Options["D"];
+        }
+
+        private void ClearCurrentQuestion()
+        {
+            txtCurQuestion.Clear();
+            txtCurA.Clear();
+            txtCurB.Clear();
+            txtCurC.Clear();
+            txtCurD.Clear();
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -94,10 +170,30 @@ namespace ServerForm.Forms
 
         private async void btnFinish_Click(object sender, EventArgs e)
         {
-            if (_room != null)
-                await _quizManager.FinishQuizAsync(_room.RoomId);
-        }
+            if (_room == null) return;
 
+            await _quizManager.FinishQuizAsync(_room.RoomId);
+
+            btnStart.Enabled = false;
+            btnNext.Enabled = false;
+            btnFinish.Enabled = false;
+            btnCheck.Enabled = false;
+            txtRoomTitle.Enabled = false;
+            var finishedRoom = _room;
+            await _quizManager.FinishQuizAsync(_room.RoomId);
+
+            ResetDashboardUI();
+
+            using (var result = new ServerResultForm(_room))
+            {
+                result.ShowDialog();
+            }
+        }
+        private async void btnCheck_Click(object sender, EventArgs e)
+        {
+            if (_room != null)
+                await _quizManager.ShowResultAsync(_room.RoomId);
+        }
         private void btnCreateQuiz_Click(object sender, EventArgs e)
         {
             new QuizEditorForm().ShowDialog();
