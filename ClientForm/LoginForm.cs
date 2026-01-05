@@ -29,7 +29,32 @@ namespace ClientForm.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Đăng nhập thất bại");
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+                string msg = "Đăng nhập thất bại.";
+
+                if (ex.Message.Contains("EMAIL_NOT_FOUND"))
+                {
+                    msg = "Email chưa được đăng ký.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("INVALID_PASSWORD") ||
+                         ex.Message.Contains("INVALID_LOGIN_CREDENTIALS"))
+                {
+                    msg = "Mật khẩu không đúng.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("API key not valid"))
+                {
+                    msg = "Hệ thống xác thực chưa được cấu hình đúng.";
+                    icon = MessageBoxIcon.Error;
+                }
+
+                MessageBox.Show(
+                    msg,
+                    "Đăng nhập thất bại",
+                    MessageBoxButtons.OK,
+                    icon
+                );
             }
         }
 

@@ -34,11 +34,21 @@ namespace ClientForm.Forms
 
                 OTPEmailService.SendOtp(email, _generatedOtp);
 
-                MessageBox.Show($"OTP đã được gửi tới {email}");
+                MessageBox.Show(
+                    $"OTP đã được gửi tới {email}",
+                    "Gửi OTP thành công",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi gửi OTP: " + ex.Message);
+                MessageBox.Show(
+                    "Không thể gửi OTP.\nVui lòng kiểm tra kết nối mạng hoặc thử lại sau.",
+                    "Gửi OTP thất bại",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
 
@@ -92,7 +102,21 @@ namespace ClientForm.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi đăng ký");
+                string msg = "Đăng ký thất bại.";
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+
+                if (ex.Message.Contains("EMAIL_EXISTS"))
+                {
+                    msg = "Email đã được đăng ký.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("WEAK_PASSWORD"))
+                {
+                    msg = "Mật khẩu quá yếu.";
+                    icon = MessageBoxIcon.Warning;
+                }
+
+                MessageBox.Show(msg, "Lỗi đăng ký", MessageBoxButtons.OK, icon);
             }
         }
         void SetPlaceholder(TextBox txt, string placeholder)
