@@ -15,57 +15,80 @@ namespace ClientForm.Forms
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
+            string email = txtEmail.Text.Trim();
+            string password = txtPass.Text;
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show(
+                    "Vui lòng nhập đầy đủ email và mật khẩu.",
+                    "Thiếu thông tin",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
             try
             {
                 Tuple<string, string> res =
                     await _auth.LoginAsync(txtEmail.Text.Trim(), txtPass.Text.Trim());
 
                 string uid = res.Item1;
-                string email = res.Item2;
+                string mail = res.Item2;
 
-                RoomListForm f = new RoomListForm(uid, email);
+                RoomListForm f = new RoomListForm(uid, mail);
                 this.Hide();
                 f.Show();
             }
             catch (Exception ex)
             {
-                MessageBoxIcon icon = MessageBoxIcon.Error;
-                string msg = "Đăng nhập thất bại.";
-
-                if (ex.Message.Contains("EMAIL_NOT_FOUND"))
+                if (ex.Message.Contains("INVALID_EMAIL"))
                 {
-                    msg = "Email chưa được đăng ký.";
-                    icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(
+                        "Email chưa được đăng ký.",
+                        "Đăng nhập thất bại",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
                 }
                 else if (ex.Message.Contains("INVALID_PASSWORD") ||
                          ex.Message.Contains("INVALID_LOGIN_CREDENTIALS"))
                 {
-                    msg = "Mật khẩu không đúng.";
-                    icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(
+                        "Mật khẩu không đúng.",
+                        "Đăng nhập thất bại",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
                 }
-                else if (ex.Message.Contains("API key not valid"))
+                else
                 {
-                    msg = "Hệ thống xác thực chưa được cấu hình đúng.";
-                    icon = MessageBoxIcon.Error;
+                    MessageBox.Show(
+                        "Không thể đăng nhập. Vui lòng thử lại sau.",
+                        "Đăng nhập thất bại",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
                 }
-
-                MessageBox.Show(
-                    msg,
-                    "Đăng nhập thất bại",
-                    MessageBoxButtons.OK,
-                    icon
-                );
             }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            new RegisterForm().ShowDialog();
+            this.Hide();
+
+            RegisterForm f = new RegisterForm();
+            f.FormClosed += (s, args) => this.Show();
+            f.Show();
         }
 
         private void btnForgotPassword_Click(object sender, EventArgs e)
         {
-            new ForgotPasswordForm().ShowDialog();
+            this.Hide();
+
+            ForgotPasswordForm f = new ForgotPasswordForm();
+            f.FormClosed += (s, args) => this.Show();
+            f.Show();
         }
     }
 }

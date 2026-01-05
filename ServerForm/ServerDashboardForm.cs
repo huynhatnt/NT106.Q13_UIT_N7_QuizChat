@@ -196,7 +196,10 @@ namespace ServerForm.Forms
         }
         private void btnCreateQuiz_Click(object sender, EventArgs e)
         {
-            new QuizEditorForm().ShowDialog();
+            this.Hide();
+            QuizEditorForm f = new QuizEditorForm();
+            f.FormClosed += (s, args) => this.Show();
+            f.Show();
         }
 
         private void StopListener()

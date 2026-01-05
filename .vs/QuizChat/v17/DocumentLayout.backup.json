@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|d:\\githubrepo\\nt106.q13_uit_n7_quizchat\\clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F9F4BE-A3BA-43CF-9756-C25CF734ED62}|ClientForm\\ClientForm.csproj|solutionrelative:clientform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,19 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "ClientForm\\LoginForm.cs",
-              "ToolTip": "D:\\GitHubRepo\\NT106.Q13_UIT_N7_QuizChat\\ClientForm\\LoginForm.cs",
-              "RelativeToolTip": "ClientForm\\LoginForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T04:59:36.92Z",
-              "EditorCaption": ""
             }
           ]
         },

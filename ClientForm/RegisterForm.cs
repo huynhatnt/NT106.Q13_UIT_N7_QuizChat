@@ -66,38 +66,38 @@ namespace ClientForm.Forms
                     string.IsNullOrWhiteSpace(confirm) ||
                     string.IsNullOrWhiteSpace(otp))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.","Thiếu thông tin",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (password != confirm)
                 {
-                    MessageBox.Show("Mật khẩu xác nhận không khớp.");
+                    MessageBox.Show("Mật khẩu xác nhận không khớp.","Lỗi mật khẩu",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (_generatedOtp == null)
                 {
-                    MessageBox.Show("Vui lòng gửi OTP trước.");
+                    MessageBox.Show("Vui lòng gửi OTP trước.","Chưa có OTP",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (DateTime.Now > _otpCreatedTime.AddMinutes(5))
                 {
-                    MessageBox.Show("OTP đã hết hạn. Vui lòng gửi lại.");
+                    MessageBox.Show("OTP đã hết hạn. Vui lòng gửi lại.","OTP hết hạn",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (otp != _generatedOtp)
                 {
-                    MessageBox.Show("OTP không đúng.");
+                    MessageBox.Show("OTP không đúng.","OTP không hợp lệ",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 string uid = await _auth.RegisterAsync(email, password);
                 await _user.SaveUserAsync(uid, email);
 
-                MessageBox.Show("Đăng ký thành công!");
+                MessageBox.Show("Đăng ký thành công!","Thành công",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Close();
             }
             catch (Exception ex)
