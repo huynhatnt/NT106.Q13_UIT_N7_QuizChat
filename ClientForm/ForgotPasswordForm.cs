@@ -89,7 +89,25 @@ namespace ClientForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi gửi OTP: " + ex.Message);
+                string msg = "Không thể gửi OTP.";
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+
+                if (ex.Message.Contains("EMAIL_NOT_FOUND"))
+                {
+                    msg = "Email này chưa được đăng ký.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("API key not valid"))
+                {
+                    msg = "Hệ thống xác thực chưa được cấu hình đúng.";
+                }
+
+                MessageBox.Show(
+                    msg,
+                    "Gửi OTP thất bại",
+                    MessageBoxButtons.OK,
+                    icon
+                );
             }
         }
 
@@ -148,7 +166,25 @@ namespace ClientForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi gửi email reset mật khẩu: " + ex.Message);
+                string msg = "Không thể gửi email đặt lại mật khẩu.";
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+
+                if (ex.Message.Contains("EMAIL_NOT_FOUND"))
+                {
+                    msg = "Email này chưa được đăng ký.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("API key not valid"))
+                {
+                    msg = "Hệ thống xác thực chưa được cấu hình đúng.";
+                }
+
+                MessageBox.Show(
+                    msg,
+                    "Quên mật khẩu",
+                    MessageBoxButtons.OK,
+                    icon
+                );
             }
         }
 

@@ -34,11 +34,21 @@ namespace ClientForm.Forms
 
                 OTPEmailService.SendOtp(email, _generatedOtp);
 
-                MessageBox.Show($"OTP đã được gửi tới {email}");
+                MessageBox.Show(
+                    $"OTP đã được gửi tới {email}",
+                    "Gửi OTP thành công",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Lỗi gửi OTP: " + ex.Message);
+                MessageBox.Show(
+                    "Không thể gửi OTP.\nVui lòng kiểm tra kết nối mạng hoặc thử lại sau.",
+                    "Gửi OTP thất bại",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
 
@@ -56,43 +66,57 @@ namespace ClientForm.Forms
                     string.IsNullOrWhiteSpace(confirm) ||
                     string.IsNullOrWhiteSpace(otp))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.","Thiếu thông tin",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (password != confirm)
                 {
-                    MessageBox.Show("Mật khẩu xác nhận không khớp.");
+                    MessageBox.Show("Mật khẩu xác nhận không khớp.","Lỗi mật khẩu",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (_generatedOtp == null)
                 {
-                    MessageBox.Show("Vui lòng gửi OTP trước.");
+                    MessageBox.Show("Vui lòng gửi OTP trước.","Chưa có OTP",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (DateTime.Now > _otpCreatedTime.AddMinutes(5))
                 {
-                    MessageBox.Show("OTP đã hết hạn. Vui lòng gửi lại.");
+                    MessageBox.Show("OTP đã hết hạn. Vui lòng gửi lại.","OTP hết hạn",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (otp != _generatedOtp)
                 {
-                    MessageBox.Show("OTP không đúng.");
+                    MessageBox.Show("OTP không đúng.","OTP không hợp lệ",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     return;
                 }
 
                 string uid = await _auth.RegisterAsync(email, password);
                 await _user.SaveUserAsync(uid, email);
 
-                MessageBox.Show("Đăng ký thành công!");
+                MessageBox.Show("Đăng ký thành công!","Thành công",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi đăng ký");
+                string msg = "Đăng ký thất bại.";
+                MessageBoxIcon icon = MessageBoxIcon.Error;
+
+                if (ex.Message.Contains("EMAIL_EXISTS"))
+                {
+                    msg = "Email đã được đăng ký.";
+                    icon = MessageBoxIcon.Warning;
+                }
+                else if (ex.Message.Contains("WEAK_PASSWORD"))
+                {
+                    msg = "Mật khẩu quá yếu.";
+                    icon = MessageBoxIcon.Warning;
+                }
+
+                MessageBox.Show(msg, "Lỗi đăng ký", MessageBoxButtons.OK, icon);
             }
         }
         void SetPlaceholder(TextBox txt, string placeholder)

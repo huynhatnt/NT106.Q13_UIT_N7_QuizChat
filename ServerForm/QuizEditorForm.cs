@@ -20,6 +20,33 @@ namespace ServerForm.Forms
 
         private void btnAddQuestion_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtQuestion.Text))
+            {
+                MessageBox.Show("Vui lòng nhập nội dung câu hỏi.","Thiếu câu hỏi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                txtQuestion.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtA.Text) ||
+                string.IsNullOrWhiteSpace(txtB.Text) ||
+                string.IsNullOrWhiteSpace(txtC.Text) ||
+                string.IsNullOrWhiteSpace(txtD.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ các đáp án A, B, C, D.","Thiếu đáp án",MessageBoxButtons.OK,MessageBoxIcon.Warning
+                );
+                return;
+            }
+            if (cboCorrectAnswer.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn đáp án đúng.","Thiếu đáp án đúng",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
+            if (txtA.Text.Trim() == txtB.Text.Trim() ||
+                txtA.Text.Trim() == txtC.Text.Trim() ||
+                txtA.Text.Trim() == txtD.Text.Trim())
+                {
+                MessageBox.Show("Các đáp án không được trùng nhau.","Đáp án không hợp lệ",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
             var q = new Question
             {
                 Text = txtQuestion.Text.Trim(),
