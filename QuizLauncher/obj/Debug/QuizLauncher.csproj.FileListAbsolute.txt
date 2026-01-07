@@ -1,0 +1,11 @@
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\bin\Debug\QuizLauncher.exe.config
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\bin\Debug\QuizLauncher.exe
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\bin\Debug\QuizLauncher.pdb
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.csproj.AssemblyReference.cache
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.Properties.Resources.resources
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.csproj.GenerateResource.cache
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.csproj.CoreCompileInputs.cache
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.exe
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.pdb
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.exe.config
+D:\GitHubRepo\NT106.Q13_UIT_N7_QuizChat\QuizLauncher\obj\Debug\QuizLauncher.QuizLauncherForm.resources
